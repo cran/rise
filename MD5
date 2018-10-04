@@ -1,11 +1,11 @@
-1916284ca121793214a83996f762e081 *DESCRIPTION
+2baf75978f1bb843520d2c962412ab32 *DESCRIPTION
 3c715fe6deec52eabe7d26e02b5f8c97 *LICENSE
-8ab311833d9903ad704f8503d8bf87e6 *NAMESPACE
+b919b1dac6a0e6bad3ca234a3cf5798b *NAMESPACE
 f74705a586e37ba14298623df7e81e5d *R/data.R
-fe3e364bb033bde02e6e188ec297f74d *R/rise.R
-ea50adcb27a180d172106ac150273e70 *README.md
+ab5b6d392b45e7ee320cb0c3cafe522f *R/rise.R
+1b3924414dbaebaadb5af23aeaf48bd4 *README.md
 5000440b6106c8645320081988bf6687 *data/sample_df.rda
 a9fe76f80667c0bf06bd2c0ce14cdbab *man/rise.Rd
 6268bc36c3c61d2f6458facb364599e3 *man/sample_df.Rd
 962c8de93cc027b6039f04afbfc690f6 *tests/testthat.R
-f10bea43675d1ec30e4df5e9348ca10c *tests/testthat/test-rise.R
+910a8a31661274b6538891ff4576539d *tests/testthat/test-rise.R

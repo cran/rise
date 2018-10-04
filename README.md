@@ -1,6 +1,13 @@
-# RISE Analysis in R
+# rise
 
-This R package helps you conduct RISE analyses as described in the paper *Bodily, R., Nyland, R., & Wiley, D. (2017). The RISE Framework: Using Learning Analytics to Automatically Identify Open Educational Resources for Continuous Improvement. International Review of Research on Distance and Open Learning, 18(2).* DOI: http://www.irrodl.org/index.php/irrodl/article/view/2952.
+<img src="https://github.com/lumenlearning/rise/blob/master/rise.png" align="right" />
+
+[![Build Status](https://travis-ci.com/lumenlearning/rise.svg?branch=master)](https://travis-ci.com/lumenlearning/rise)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-ago/rise)](https://cran.r-project.org/package=rise)
+[![CRAN_Download_Badge](http://cranlogs.r-pkg.org/badges/rise)](https://cran.r-project.org/package=rise)
+[![status](http://joss.theoj.org/papers/6504ee60739eb527d3dc01bbf875c86a/status.svg)](http://joss.theoj.org/papers/6504ee60739eb527d3dc01bbf875c86a)
+
+This R package helps you conduct RISE analyses as described in the paper *Bodily, R., Nyland, R., & Wiley, D. (2017). The RISE Framework: Using Learning Analytics to Automatically Identify Open Educational Resources for Continuous Improvement. International Review of Research on Distance and Open Learning, 18(2).* DOI: http://dx.doi.org/10.19173/irrodl.v18i2.2952.
 
 The purpose of a RISE analysis is to help an instructional designer / learning scientist / course developer / instructor quickly identify portions of a course that aren't supporting learning as effectively as they would like. When course materials are licensed as [open educational resources](http://opencontent.org/definition/), materials identified through RISE analysis can be iteratively enhanced through a process of continuous improvement. Special attention should be given to outcomes classified in quadrant four (at the bottom right), where students are spending more time than average using resources but performing below average on associated assessments. For more detail, please refer to the article.
 
@@ -13,17 +20,17 @@ Before a RISE analysis can be performed, a course must have:
 
 ## Installation
 
-You can always install the latest version of the RISE Analysis package using:
+You can install the stable version of rise from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("rise")
+```
+
+You can also install the latest development version of the RISE package using:
 
 ``` r
 install.packages("devtools")
 devtools::install_github('lumenlearning/rise')
-```
-
-You will soon be able to install the released version of rise from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("rise")
 ```
 
 ## Example
@@ -61,12 +68,18 @@ avg_views <- runif(7, min=0.5, max=1.5)
 
 sample_df <- data.frame(outcomes, avg_scores, avg_views)
 
-rise_df <- rise_analysis(sample_df)
-rise_graphic <- rise_analysis(sample_df, visual = TRUE)
+rise_df <- rise(sample_df)
+rise_graphic <- rise(sample_df, visual = TRUE)
 ```
 
 ## License
 
 The rise package is licensed under an MIT license. See the LICENSE and LICENSE.md files for additional details.
 
-[![DOI](https://zenodo.org/badge/141607792.svg)](https://zenodo.org/badge/latestdoi/141607792)
+## Citation
+
+[![status](http://joss.theoj.org/papers/6504ee60739eb527d3dc01bbf875c86a/status.svg)](http://joss.theoj.org/papers/6504ee60739eb527d3dc01bbf875c86a)
+
+If you use the RISE package while conducting research that you publish, you can cite the package as:
+
+Wiley, (2018). RISE: An R package for RISE analysis. Journal of Open Source Software, 3(28), 846, https://doi.org/10.21105/joss.00846
